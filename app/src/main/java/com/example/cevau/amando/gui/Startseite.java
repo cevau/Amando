@@ -17,6 +17,7 @@ public class Startseite extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
+        /* just a comment */
         Log.d("tag","CV Message");
         getMenuInflater().inflate(R.menu.hauptmenue, menu);
         return super.onCreateOptionsMenu(menu);
