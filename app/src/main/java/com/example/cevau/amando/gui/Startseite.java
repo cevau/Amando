@@ -2,6 +2,9 @@ package com.example.cevau.amando.gui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+
 import com.example.cevau.amando.R;
 
 public class Startseite extends AppCompatActivity {
@@ -11,4 +14,12 @@ public class Startseite extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.startseite);
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        Log.d("tag","CV Message");
+        getMenuInflater().inflate(R.menu.hauptmenue, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
 }

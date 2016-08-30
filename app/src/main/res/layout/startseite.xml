@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:text="@string/sf_position_senden"
         android:elevation="5dp"
-        android:onClick="onClickPositionSenden" />
+        android:onClick="onClickPositionSenden"/>
 
     <Button
         android:id="@+id/sf_starte_geokontakte"
@@ -33,7 +33,8 @@
         android:layout_height="wrap_content"
         android:text="@string/sf_karte_anzeigen"
         android:elevation="5dp"
-        android:onClick="onClickKarteAnzeigen" />
+        android:onClick="onClickKarteAnzeigen"
+        android:nestedScrollingEnabled="true" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
