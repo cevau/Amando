@@ -14,7 +14,7 @@ public class Startseite extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        
+
         //Startseite festlegen
         setContentView(R.layout.startseite);
 
@@ -79,4 +79,26 @@ public class Startseite extends AppCompatActivity {
         }
         return super.onContextItemSelected(item);
     }
+
+    //OnClick auf die startseite auswerten:
+    public void onClickPositionSenden(final View sfNormal) {
+    //todo
+        Log.i("click","PositionSenden");
+    }
+
+    public void onClickGeokontakteVerwalten(final View sfNormal) {
+        //todo
+        Log.i("click","GeokontakteVerwalten");
+    }
+    public void onClickKarteAnzeigen(final View sfNormal) {
+        //todo
+        Log.i("click","KarteAnzeigen");
+    }
+    public void onClickSimulationStarten(final View sfNormal) {
+        //todo
+        Log.i("click","SimulationStarten");
+    }
+
+
+
 }
