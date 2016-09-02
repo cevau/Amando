@@ -1,5 +1,6 @@
 package com.example.cevau.amando.gui;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -75,6 +76,8 @@ public class Startseite extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.opt_geokontakt_verwalten_hilfe:
                 //todo rufe hilfeseite auf...
+                final Intent intent = new Intent(this,HilfeAnzeigen.class);
+                startActivity(intent);
                 return true;
         }
         return super.onContextItemSelected(item);
