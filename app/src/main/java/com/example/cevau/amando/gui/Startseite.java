@@ -75,7 +75,6 @@ public class Startseite extends AppCompatActivity {
     public boolean onContextItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.opt_geokontakt_verwalten_hilfe:
-                //todo rufe hilfeseite auf...
                 final Intent intent = new Intent(this,HilfeAnzeigen.class);
                 startActivity(intent);
                 return true;
@@ -92,6 +91,10 @@ public class Startseite extends AppCompatActivity {
     public void onClickGeokontakteVerwalten(final View sfNormal) {
         //todo
         Log.i("click","GeokontakteVerwalten");
+        final Intent intent = new Intent(this,GeoKontakteAuflisten.class);
+        startActivity(intent);
+        return;
+
     }
     public void onClickKarteAnzeigen(final View sfNormal) {
         //todo
