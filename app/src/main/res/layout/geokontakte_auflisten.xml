@@ -7,19 +7,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/Sortierung"
-        />
+        android:id="@+id/sp_sortierung"/>
 
-
+    <!--List View ist eine AdapterView, die mit Daten befüllt werden kann-->
+    <!--weitere sind: Gallery, GridView, Spinner-->
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/android:list">
+        android:id="@+id/android:list"
+        android:textFilterEnabled="true"
+        android:cacheColorHint="@color/hintergrund">
     </ListView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="asdf"/>
+        android:id="@+id/android:empty"
+        android:text="@string/txt_geokontakt_auflisten_keineDaten"/>
 
 
 </LinearLayout>
