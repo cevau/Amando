@@ -44,7 +44,9 @@ public class Startseite extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.opt_einstellungenBearbeiten:
                 Log.i("menu","opt_einstellungenBearbeiten");
-                return false;
+                final Intent intent = new Intent(this,EinstellungenBearbeiten.class);
+                startActivity(intent);
+                return true;
             case R.id.opt_hilfe:
                 Log.i("menu","opt_hilfe");
                 return false;

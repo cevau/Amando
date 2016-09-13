@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".gui.HilfeAnzeigen"/>
         <activity android:name=".gui.GeoKontakteAuflisten"/>
+        <activity android:name=".gui.EinstellungenBearbeiten"/>
     </application>
 
 </manifest>
