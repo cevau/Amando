@@ -83,13 +83,12 @@ public class GeoKontakteAuflisten extends ListActivity {
         Log.i("listenauswahl",stOut);
         sendToast((TextView)v);
         super.onListItemClick(l, v, position, id);
-
     }
 
 
     private void sendToast(TextView v){
         String msg = v.getText().toString();
-        final Toast hinweis = Toast.makeText(this,"Element" + msg,Toast.LENGTH_LONG);
+        final Toast hinweis = Toast.makeText(this,"Element: " + msg,Toast.LENGTH_LONG);
         hinweis.show();
     }
 
