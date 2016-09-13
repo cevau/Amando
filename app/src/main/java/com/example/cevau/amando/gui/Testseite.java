@@ -1,7 +1,9 @@
 package com.example.cevau.amando.gui;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -10,6 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.cevau.amando.R;
+
+import java.util.Map;
 
 /**
  * Created by cevau on 9/13/2016.
@@ -23,9 +27,18 @@ public class Testseite extends AppCompatActivity {
     }
 
     public void onClickReadEinstellungen(final View sfNormal) {
-        sendToast("ReadEinstellungen");
 
+        //SharedPreferences einstellungen = this.getPreferences(MODE_PRIVATE);      //holt die preferences für diese Activity !!!
+        //SharedPreferences einstellungen = this.getSharedPreferences("com.example.cevau.amando_preferences",MODE_PRIVATE);  //klappt !!!
+        SharedPreferences einstellungen = PreferenceManager.getDefaultSharedPreferences(this);      //holt die app übergreifenden einstellungen.
 
+        Map<String, ?> allEntries = einstellungen.getAll();
+        for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
+            Log.d("map values", entry.getKey() + ": " + entry.getValue().toString());
+        }
+
+        String nickname = einstellungen.getString("nickname","nothing found");
+        sendToast(nickname);
     }
 
     private void sendToast(String msg){
