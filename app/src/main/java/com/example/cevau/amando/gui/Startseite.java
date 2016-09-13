@@ -107,6 +107,13 @@ public class Startseite extends AppCompatActivity {
         Log.i("click","SimulationStarten");
     }
 
+    public void onClickTestseiteStarten(final View sfNormal) {
+        //todo
+        Log.i("click","TestseiteStarten");
+        final Intent intent = new Intent(this,Testseite.class);
+        startActivity(intent);
+        return;
+    }
 
 
 }

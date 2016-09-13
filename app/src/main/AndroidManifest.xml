@@ -18,6 +18,7 @@
         <activity android:name=".gui.HilfeAnzeigen"/>
         <activity android:name=".gui.GeoKontakteAuflisten"/>
         <activity android:name=".gui.EinstellungenBearbeiten"/>
+        <activity android:name=".gui.Testseite"/>
     </application>
 
 </manifest>

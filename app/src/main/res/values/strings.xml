@@ -1,12 +1,16 @@
 <resources>
     <string name="app_name">Amando</string>
 
+
+    <string name="bt_ReadEinstellungen">Lese Einstellungenen</string>
+
     <!-- Schaltflaechentexte -->
     <string name="sf_position_senden">Sende Position</string>
     <string name="sf_position_senden_beenden">Stop senden</string>
     <string name="sf_geokontakte_verwalten">Verwalte Geo Kontakte</string>
     <string name="sf_karte_anzeigen">Zeige Karte</string>
     <string name="sf_simulation">Start Simulation</string>
+    <string name="sf_testpage">Start Testseite</string>
     <string name="sf_ok">OK</string>
 
     <!-- Startseite -->
