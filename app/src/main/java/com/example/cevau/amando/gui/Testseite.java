@@ -8,7 +8,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.cevau.amando.R;
@@ -39,6 +38,13 @@ public class Testseite extends AppCompatActivity {
 
         String nickname = einstellungen.getString("nickname","nothing found");
         sendToast(nickname);
+    }
+
+    public void onClickWriteEinstellungen(final View sfNormal) {
+        SharedPreferences einstellungen = PreferenceManager.getDefaultSharedPreferences(this);      //holt die app übergreifenden einstellungen.
+        SharedPreferences.Editor editor = einstellungen.edit();
+        editor.putBoolean("nutzeVerschlüsselung",true);
+        editor.commit();
     }
 
     private void sendToast(String msg){

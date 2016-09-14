@@ -12,16 +12,19 @@
     />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2" />
+        android:text="@string/bt_WriteEinstellungen"
+        android:id="@+id/button_WriteEinstellungen"
+        android:onClick="onClickWriteEinstellungen" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Button"
-        android:id="@+id/button3" />
+        android:id="@+id/button2" />
+
+
 
     <Switch
         android:layout_width="wrap_content"

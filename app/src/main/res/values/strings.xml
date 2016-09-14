@@ -3,6 +3,7 @@
 
 
     <string name="bt_ReadEinstellungen">Lese Einstellungenen</string>
+    <string name="bt_WriteEinstellungen">Schreibe Einstellungenen</string>
 
     <!-- Schaltflaechentexte -->
     <string name="sf_position_senden">Sende Position</string>
