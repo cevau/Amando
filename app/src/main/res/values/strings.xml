@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">Amando</string>
+    <string name="app_name">Amandö</string>
 
 
     <string name="bt_ReadEinstellungen">Lese Einstellungenen</string>
     <string name="bt_WriteEinstellungen">Schreibe Einstellungenen</string>
+    <string name="bt_MakePhonecall">Rufe An</string>
 
     <!-- Schaltflaechentexte -->
     <string name="sf_position_senden">Sende Position</string>

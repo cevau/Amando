@@ -1,5 +1,7 @@
 package com.example.cevau.amando.gui;
 
+//https://developer.android.com/reference/packages.html
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -88,6 +90,9 @@ public class Startseite extends AppCompatActivity {
     public void onClickPositionSenden(final View sfNormal) {
     //todo
         Log.i("click","PositionSenden");
+        final Intent intent = new Intent(this,PositionSenden.class);
+        startActivity(intent);
+        return;
     }
 
     public void onClickGeokontakteVerwalten(final View sfNormal) {

@@ -19,6 +19,13 @@
         android:onClick="onClickWriteEinstellungen" />
 
     <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_MakePhonecall"
+        android:id="@+id/button_MakePhonecall"
+        android:onClick="onClickMakePhoneCall" />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Button"

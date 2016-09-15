@@ -2,9 +2,11 @@ package com.example.cevau.amando.gui;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresPermission;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -13,6 +15,7 @@ import android.widget.Toast;
 import com.example.cevau.amando.R;
 
 import java.util.Map;
+import java.util.jar.Manifest;
 
 /**
  * Created by cevau on 9/13/2016.
@@ -46,6 +49,15 @@ public class Testseite extends AppCompatActivity {
         editor.putBoolean("nutzeVerschlüsselung",true);
         editor.commit();
     }
+
+    public void onClickMakePhoneCall(final View sfNormal){
+        sendToast("MakePhoneCall");
+        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:(+49) 15234542904"));
+        //Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:(+49) 15234542904"));
+
+        startActivity(intent);
+    }
+
 
     private void sendToast(String msg){
         final Toast hinweis = Toast.makeText(this,msg,Toast.LENGTH_LONG);

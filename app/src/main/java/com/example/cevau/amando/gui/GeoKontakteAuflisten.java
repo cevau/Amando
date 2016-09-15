@@ -1,6 +1,8 @@
 package com.example.cevau.amando.gui;
 
+import android.app.Activity;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -19,6 +21,10 @@ import java.util.Arrays;
  * Created by cevau on 9/5/2016.
  */
 public class GeoKontakteAuflisten extends ListActivity {
+
+    static final String SELECT_KONTAKT = "SELECT_KONTAKT";
+    static final String IN_PARAM_KONTAKT_ID = "KONTAKT_ID";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,6 +89,13 @@ public class GeoKontakteAuflisten extends ListActivity {
         Log.i("listenauswahl",stOut);
         sendToast((TextView)v);
         super.onListItemClick(l, v, position, id);
+
+        //Antwort hier als Sub Activity
+        final Intent intent = new Intent();
+        intent.putExtra(IN_PARAM_KONTAKT_ID,id);
+        setResult(Activity.RESULT_OK,intent);
+        finish();
+
     }
 
 
