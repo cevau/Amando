@@ -54,7 +54,6 @@ public class Testseite extends AppCompatActivity {
         sendToast("MakePhoneCall");
         Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:(+49) 15234542904"));
         //Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:(+49) 15234542904"));
-
         startActivity(intent);
     }
 
